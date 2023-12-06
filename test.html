@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
+      padding: 20px;
+    }
+
+    .section img {
+      width: 45%; /* Adjust as needed */
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .section p {
+      width: 50%; /* Adjust as needed */
+      margin-right: 20px; /* Adjust as needed */
+      color: #333;
+    }
+
+    @media only screen and (max-width: 767px) {
+      /* Styles for mobile devices */
+      .section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .section img,
+      .section p {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="section">
+  <img src="wycieczka.jpg" alt="Description of the image">
+  <p>This is some text describing the image or providing additional information.</p>
+</div>
+
+</body>
+</html>
