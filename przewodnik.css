@@ -286,7 +286,6 @@ body{
   background-color: rgba(0,0,0,0.9);
   color: blue;
   font-size: 1.3rem;
-  
 }
 
 
@@ -570,11 +569,16 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0;
-  .box{
-    position: relative;
   }
   #box1, #box2, #box3, #box4, #box5, #box6{
     all: unset;
     width: 100%;
     height: auto;
+    position: relative;
+    text-align: center;
+  }
+  .box .tooltip{
+    bottom: 5%;
+    font-size: 2rem;
+  }
 }
