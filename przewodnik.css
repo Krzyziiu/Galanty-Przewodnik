@@ -296,32 +296,34 @@ body{
   transform: translate(-50%, -50%) scale(0);
   width: 70vw;
   height: 80vh;
-  background-color: rgba(0,0,0,0.7);
   text-align: center;
+  background-color: rgba(0,0,0,0.7);
   z-index: 99;
   transition: all 1s ease;
 }
 .popup img{
   position: absolute;
-  display: block;
   top: 0;
   width: auto;
   height: 25rem;
   left: 50%;
-  transform: translateX(-50%)
+  transform: translateX(-50%);
 }
 .popup p{
   position: absolute;
   top: 25rem;
-  margin-left: 5%;
-  margin-right: 5%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
   color: white;
   font-size: 1.3rem;
 }
 .popup .x{
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 2%;
+  right: 1%;
   background-color: white;
   color: black;
   width: 2rem;
