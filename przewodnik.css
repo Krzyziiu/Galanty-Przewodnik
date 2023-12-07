@@ -564,4 +564,15 @@ body{
   #menu{
     visibility: visible;
   }
+  .box{
+    position: static;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+/*     temp code idk if it works */
+  }
+
+
+  
 }
