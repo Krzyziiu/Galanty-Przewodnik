@@ -575,6 +575,7 @@ body{
     height: auto;
     position: relative;
     text-align: center;
+    margin-top: 2rem;
   }
   .box .tooltip{
     bottom: 5%;
