@@ -564,10 +564,13 @@ body{
   #menu{
     visibility: visible;
   }
-  .box{
-    position: static;
+
+/*   temp code idk if it works */
+  .oferty{
     display: flex;
     flex-direction: column;
+  .box{
+    position: static;
     width: 100%;
     height: auto;
 /*     temp code idk if it works */
