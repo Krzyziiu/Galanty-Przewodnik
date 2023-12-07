@@ -516,7 +516,6 @@ body{
   #logo{
     width: 7rem;
     height: 7rem;
-    margin-top: 1svh;
   }
   .sekcja{
     flex-direction: column;
