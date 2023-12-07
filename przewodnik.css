@@ -572,7 +572,47 @@ body{
   .box{
     position: relative;
   }
-  #box1, #box2, #box3, #box4, #box5, #box6{
+  #box1{
+    width: 100%;
+    height: auto;
+    top: no;
+    left: no;
+    right: no;
+    bottom: no;
+  }
+  #box2{
+    width: 100%;
+    height: auto;
+    top: no;
+    left: no;
+    right: no;
+    bottom: no;
+  }
+  #box3{
+    width: 100%;
+    height: auto;
+    top: no;
+    left: no;
+    right: no;
+    bottom: no;
+  }
+  #box4{
+    width: 100%;
+    height: auto;
+    top: no;
+    left: no;
+    right: no;
+    bottom: no;
+  }
+  #box5{
+    width: 100%;
+    height: auto;
+    top: no;
+    left: no;
+    right: no;
+    bottom: no;
+  }
+  #box6{
     width: 100%;
     height: auto;
     top: no;
