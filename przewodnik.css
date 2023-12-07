@@ -290,7 +290,7 @@ body{
 
 
 .popup{
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
@@ -580,5 +580,8 @@ body{
   .box .tooltip{
     bottom: 5%;
     font-size: 2rem;
+  }
+  .popup{
+  height: 50%;
   }
 }
