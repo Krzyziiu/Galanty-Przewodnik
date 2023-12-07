@@ -217,27 +217,6 @@ const closePop = (object) =>{
 
 
 //Galeria
-
-
-const popupPic = document.querySelector("#popupPic");
-const img = popupPic.querySelector("img");
-const x = popupPic.querySelector("p")
-
-
-// const popupPicChild = popupPic.firstChild;
-
-let popup = false;
-// const klik = (e) =>{
-//     const zdjecie = e.firstChild;
-//     if(!popup){
-//         popup=true;
-//         popupPic.style.transform = "translate(-50%, -50%) scale(0.38)";
-//         popupPic.children[0].src = zdjecie.src;
-//         popupPic.style.width = img.offsetWidth + 'px';
-//         popupPic.style.height = img.offsetHeight + 'px';
-//     }
-    
-// }
 const klikOff = () =>{
     popupPic.style.transform = "translate(-50%, -50%) scale(0)";
     popup=false;
