@@ -514,7 +514,6 @@ body{
 @media screen and (max-width: 576px){
   html{
     font-size: 8px;
-    overflow-x: hidden;
   }
   #logo{
     width: 7rem;
