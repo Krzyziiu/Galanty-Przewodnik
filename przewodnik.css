@@ -570,11 +570,14 @@ body{
     display: flex;
     flex-direction: column;
   .box{
-    position: static;
+    position: relative;
+  }
+  #box1, #box2, #box3, #box4, #box5, #box6{
     width: 100%;
     height: auto;
-/*     temp code idk if it works */
   }
+  
+  
 
 
   
