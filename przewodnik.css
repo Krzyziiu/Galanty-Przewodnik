@@ -57,15 +57,41 @@ body{
   height: 100%;
   border-radius: 100%;
 }
-#nav-bar >*:hover{
+#nav-bar a:hover{
   /* margin-top: 25px;
   transition: margin-top 0.5s; */
   cursor: pointer;
   color: blue;
 }
-#nav-bar a{
+#o-mnie i{
+  cursor: pointer;
+  transition: all 0.5s;
+}
+li{
+  list-style: none;
+  margin-left: -1rem;
+  background: rgb(63,171,199);
+  background: rgb(59, 148, 184);
+  background: linear-gradient(90deg, rgba(59, 148, 184,1) 5%, rgba(56, 135, 176 ,1) 100%);
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s, opacity 0.5s;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  padding-top: 1rem;
+}
+ul:hover{
+  color: blue;
+  cursor: pointer;
+}
+
+
+a{
   text-decoration: none;
-  color: inherit; 
+  color: white; 
 }
 #menu{
   display: inline-block;
@@ -458,9 +484,45 @@ body{
   
   
 
+/* Uprawnienia */
+#uprawnienia{
+  margin: 1vw;
+  width: 98vw;
+  height: 84vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid white;
+}
+#uprawnienia h2{
+  font-size: 3rem;
+  color: white;
+}
 
-
-
+/* Kontakt */
+#contact{
+  margin: 1vw;
+  width: 98vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+#contact .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  height: 8rem;
+  margin: 0.5rem;
+  border: 1px solid white;
+  color: white;
+  margin-top: 10%;
+  border-radius: 20%;
+  cursor: pointer;
+}
+.icon i{
+  font-size: 3rem;
+}
 
 
 
@@ -564,8 +626,6 @@ body{
   #menu{
     visibility: visible;
   }
-
-/*   temp code idk if it works */
   .oferty{
     display: flex;
     flex-direction: column;
@@ -586,4 +646,9 @@ body{
   .popup{
   height: 55%;
   }
+  li{
+    background: linear-gradient(145deg, rgba(61, 160, 192, 1) 5%, rgba(57, 141, 180 ,1) 100%);
+    margin-left: 0rem;
+  }
+
 }
