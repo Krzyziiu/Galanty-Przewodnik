@@ -18,6 +18,21 @@ const menu = (menu) =>{
         bar3.style.transform = "translate(0, -0rem) rotate(0deg)";
     }
 }
+let dropFlag = false; // not dropped
+const drop = (x) => {
+  const dropMenu = document.querySelector("li");
+  if (!dropFlag) {
+    dropFlag = true;
+    x.style.transform = "rotate(180deg)";
+    dropMenu.style.maxHeight = "5rem";
+    dropMenu.style.opacity = "1";
+  } else {
+    dropFlag = false;
+    x.style.transform = "rotate(0)";
+    dropMenu.style.maxHeight = "0";
+    dropMenu.style.opacity = "0";
+  }
+};
 
 
 
