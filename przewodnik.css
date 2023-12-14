@@ -484,7 +484,7 @@ a{
 }
 @media screen and (max-width: 576px){
   html{
-    font-size: 8px;
+    font-size: 6px;
   }
   
   #nav-bar{
@@ -509,7 +509,7 @@ a{
   }
   .real-section img{
     height: 55vh;
-    margin-left: 10rem;
+    /* margin-left: 10rem; */
   }
   .real-section p{
     font-size: 2rem;
