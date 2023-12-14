@@ -12,7 +12,7 @@ const menu = (menu) =>{
         bar3.style.transform = "translate(0, -1.1rem) rotate(45deg)";
     }else{
         menuOpen=false;
-        nav.style.left = "-20%";
+        nav.style.left = "-22%";
         bar1.style.transform = "translate(0, 0rem) rotate(0deg)";
         bar2.style.opacity = "1";
         bar3.style.transform = "translate(0, -0rem) rotate(0deg)";
@@ -265,3 +265,22 @@ if (!popup) {
 };
   
   
+
+
+// sticky
+
+const stickySections = [...document.querySelectorAll('.sticky')];
+window.addEventListener('scroll', (e) =>{
+    for(let i=0; i<stickySections.length; i++){
+        transform(stickySections[i]);
+    }
+})
+
+
+const transform = (section) =>{
+    const offsetTop = section.parentElement.offsetTop;
+    const scrollSection = section.querySelector('.scroll-section')
+    let percentage = ((window.scrollY - offsetTop)/window.innerHeight)*100;
+    percentage = percentage < 0 ? 0 : percentage > 336 ? 336 : percentage;
+    scrollSection.style.transform = `translateX(-${percentage}vw)`;
+}
