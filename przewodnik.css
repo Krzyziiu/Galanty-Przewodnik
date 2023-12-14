@@ -509,7 +509,7 @@ a{
   }
   .real-section img{
     height: 55vh;
-    /* margin-left: 10rem; */
+    margin-left: 5rem;
   }
   .real-section p{
     font-size: 2rem;
@@ -547,3 +547,12 @@ a{
 
 }
 
+@media screen and (max-width: 576px){
+  .real-section img{
+    height: 45vh;
+    /* margin-left: 10rem; */
+  }
+  .real-section p{
+    width: 40rem;
+  }
+}
