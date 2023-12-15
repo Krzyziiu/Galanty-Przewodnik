@@ -16,6 +16,7 @@ body{
   width: 100%;
   height: 100%;
   padding-top: 5rem;
+  viewport-fit: cover;
 }
 #sekcja-piersza{
   font-family: 'Ubuntu', sans-serif;
