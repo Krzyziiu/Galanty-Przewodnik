@@ -281,6 +281,12 @@ const transform = (section) =>{
     const offsetTop = section.parentElement.offsetTop;
     const scrollSection = section.querySelector('.scroll-section')
     let percentage = ((window.scrollY - offsetTop)/window.innerHeight)*100;
-    percentage = percentage < 0 ? 0 : percentage > 336 ? 336 : percentage;
+    if(stickySections[1].classList[1] =='sticky-opinie'){
+        percentage = percentage < 0 ? 0 : percentage > 680 ? 680 : percentage;
+        scrollSection.style.transform = `translateX(-${percentage}vw)`;
+    }else{
+        percentage = percentage < 0 ? 0 : percentage > 336 ? 336 : percentage;
     scrollSection.style.transform = `translateX(-${percentage}vw)`;
+    }
+    
 }
