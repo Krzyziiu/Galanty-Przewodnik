@@ -130,7 +130,7 @@ a{
 .sticky{
   overflow: hidden;
   position: sticky;
-  top: 5.5rem;
+  top: 6rem;
   height: 90vh;
   display: flex;
   justify-content: space-between;
@@ -165,7 +165,16 @@ a{
   margin-left: 1%;
 }
 
-
+ .sticky-parent-opinie{
+  height: 800vh;
+}
+/*
+.sticky-opinie{
+  width: 400%;
+}
+.section-opinie{
+  width: 400%;
+} */
 
 
 
@@ -310,7 +319,7 @@ a{
   display: grid;
   grid-template-columns: max-content max-content max-content max-content;
   gap: .8% .8%;
-  height: 500vh;
+  height: 500svh;
   }
   
 .zdjecia{
@@ -377,7 +386,7 @@ a{
 .uprawnienia{
   margin: 1vw;
   width: 98vw;
-  height: 84vh;
+  height: 100svh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -386,7 +395,7 @@ a{
 }
 .uprawnienia h2{
   margin-top: 5%;
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: white;
 }
 .uprawnienia p{
@@ -394,6 +403,7 @@ a{
 }
 
 /* Opinie */
+
 .section-opinie{
   position: relative;
 }
@@ -407,12 +417,22 @@ a{
   font-size: 4rem;
   align-self: center;
 }
+.section-opinie p{
+  margin: 4rem;
+  font-size: 1.8rem;
+  margin-top: 10rem;
+}
+.section-opinie img{
+  width: 80vw;
+  height: auto;
+  object-fit: fill;
+}
 
 /* Kontakt */
 #contact{
   margin: 1vw;
   width: 98vw;
-  height: 70vh;
+  height: 70svh;
   display: flex;
   justify-content: center;
 }
@@ -508,16 +528,21 @@ a{
     align-items: flex-start;
   }
   .real-section img{
-    height: 55vh;
+    height: 45svh;
     margin-left: 5rem;
   }
   .real-section p{
     font-size: 2rem;
+    width: 40rem;
+
   }
 
   .opinieh2{
     top: 0rem;
     left: 28rem;
+  }
+  .uprawnienia p{
+    font-size: 2rem;
   }
   .section-opinie{
     margin-top: 10rem;
@@ -543,16 +568,5 @@ a{
   }
   .popup{
   height: 55%;
-  }
-
-}
-
-@media screen and (max-width: 576px){
-  .real-section img{
-    height: 45vh;
-    /* margin-left: 10rem; */
-  }
-  .real-section p{
-    width: 40rem;
   }
 }
