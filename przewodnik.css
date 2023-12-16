@@ -16,8 +16,8 @@ body{
   width: 100%;
   height: 100%;
   padding-top: 5rem;
-  viewport-fit: cover;
 }
+
 #sekcja-piersza{
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
@@ -63,11 +63,14 @@ body{
 
 #logo{
   position: fixed;
-  right: 2%;
-  top: 0%;
-  width: 5rem;
-  height: 5rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50rem;
+  height: 50rem;
   z-index: 11;
+  cursor: pointer;
+  transition: all 1s;
 }
 #logo img{
   width: 100%;
@@ -511,16 +514,13 @@ a{
   #nav-bar{
     flex-direction: column;
     justify-content: start;
-    width: 20%;
+    width: 15%;
     height: 100%;
     left: -22%;
     padding-top: 5rem;
     padding-left: 0;
   }
-  #logo{
-    width: 7rem;
-    height: 7rem;
-  }
+  
   #menu{
     visibility: visible;
   }
@@ -570,4 +570,14 @@ a{
   .popup{
   height: 55%;
   }
+}
+/* blur */
+#menu{
+  filter: blur(5px);
+}
+#nav-bar{
+  filter: blur(5px);
+}
+.sticky-parent{
+  filter: blur(5px);
 }
