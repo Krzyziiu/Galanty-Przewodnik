@@ -18,6 +18,22 @@ const menu = (menu) =>{
         bar3.style.transform = "translate(0, -0rem) rotate(0deg)";
     }
 }
+const logo = (logo) =>{
+    document.querySelector('#menu').style.filter = `blur(0)`;
+    document.querySelector('#nav-bar').style.filter = `blur(0)`;
+    document.querySelector('.sticky-parent').style.filter = `blur(0)`;
+    document.querySelector('.sticky-parent-opinie').style.filter = `blur(0)`;
+    logo.style.width = `8rem`;
+    logo.style.height= `8rem`;
+    logo.style.left = 'auto';
+    logo.style.right = `0%`;
+    logo.style.top = `5%`;
+    if(window.innerWidth>600){
+        logo.style.width = `5rem`;
+        logo.style.height= `5rem`;
+        logo.style.right = `5%`;
+    }
+}
 let dropFlag = false; // not dropped
 const drop = (x) => {
   const dropMenu = document.querySelector("li");
