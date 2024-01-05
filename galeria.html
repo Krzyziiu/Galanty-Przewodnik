@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="height=device-height, 
+                      width=device-width, initial-scale=1.0, 
+                      minimum-scale=1.0, maximum-scale=1.0, 
+                      user-scalable=no, target-densitydpi=device-dpi">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="przewodnik.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +19,7 @@
     <title>Galanty Przewodnik</title>
 </head>
 <body>
-  <div id="logo"><img src="logo.png"></div>
+  <div id="logo" onclick="logo(this)"><img src="logo.png"></div>
   <div id="menu" onclick="menu(this)">
     <div class="bar1"></div>
     <div class="bar2"></div>
@@ -23,6 +27,8 @@
   </div>
   <div id="nav-bar">
     <div id="o-mnie"><a href="index.html">O mnie</a></div>
+    <div id="o-mnie"><a href="uprawnienia.html">Uprawnienia</a></div>
+    <div id="o-mnie"><a href="opinie.html">Opinie</a></div>
     <div id="oferta"><a href="oferta.html">Oferta</a></div>
     <div id="galeria"><a href="galeria.html">Galeria</a></div>
     <div id="polecane"><a href="polecane.html">Polecane</a></div>
@@ -32,7 +38,7 @@
 
 
   
-    <div id="gallery">
+    <section id="gallery">
     <div class="zdjecia" id="zdjecie1" onclick="klik(this)"><img src="galeria/galeria1.jpg"></div>
     <div class="zdjecia" id="zdjecie2" onclick="klik(this)"><img src="galeria/galeria2.jpg"></div>
     <div class="zdjecia" id="zdjecie3" onclick="klik(this)"><img src="galeria/galeria3.jpg"></div>
@@ -81,12 +87,12 @@
     <div class="zdjecia" id="zdjecie46" onclick="klik(this)"><img src="galeria/galeria46.jpg"></div>
     <div class="zdjecia" id="zdjecie47" onclick="klik(this)"><img src="galeria/galeria47.jpg"></div>
     <div class="zdjecia" id="zdjecie48" onclick="klik(this)"><img src="galeria/galeria48.jpg"></div>
-
+  </section>
     <div class="popup-pic" id="popupPic">
-        <img src="">
+        <img src="bałuty.png">
         <p id="x" onclick="klikOff()">&#10005</p>
     </div>
-</div>
+  
 <script src="przewodnik.js"></script>
 </body>
 </html>
