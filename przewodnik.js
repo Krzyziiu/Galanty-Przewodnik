@@ -8,12 +8,12 @@ const menu = (menu) =>{
     if(!menuOpen){
         menuOpen=true;
         nav.style.left = "0%";
-        bar1.style.transform = "translate(0, 1rem) rotate(-45deg)";
+        bar1.style.transform = "translate(0, 1.3rem) rotate(-45deg)";
         bar2.style.opacity = "0";
-        bar3.style.transform = "translate(0, -1.1rem) rotate(45deg)";
+        bar3.style.transform = "translate(0, -1.3rem) rotate(45deg)";
     }else{
         menuOpen=false;
-        nav.style.left = "-22%";
+        nav.style.left = "-20%";
         bar1.style.transform = "translate(0, 0rem) rotate(0deg)";
         bar2.style.opacity = "1";
         bar3.style.transform = "translate(0, -0rem) rotate(0deg)";
@@ -23,15 +23,15 @@ const logo = (logo) =>{
     document.querySelector('#menu').style.filter = `blur(0)`;
     document.querySelector('#nav-bar').style.filter = `blur(0)`;
     document.querySelector('section').style.filter = `blur(0)`;
-    logo.style.width = `8rem`;
-    logo.style.height= `8rem`;
+    logo.style.width = `6rem`;
+    logo.style.height= `6rem`;
     logo.style.left = 'auto';
-    logo.style.right = `0%`;
+    logo.style.right = `2%`;
     logo.style.top = `5%`;
-    if(window.innerWidth>600){
-        logo.style.width = `5rem`;
-        logo.style.height= `5rem`;
-        logo.style.right = `5%`;
+    if(window.innerWidth<600){
+        logo.style.width = `10rem`;
+        logo.style.height= `10rem`;
+        logo.style.right = `-4%`;
     }
 }
 let dropFlag = false; // not dropped
