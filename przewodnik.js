@@ -1,3 +1,35 @@
+
+
+
+
+
+
+
+
+
+
+// temp code below
+
+
+const firstSection = document.querySelectorAll(".real-section")[0];
+const secondSection = document.querySelectorAll(".real-section")[1];
+const thirdSection = document.querySelectorAll(".real-section")[2];
+
+firstSection.style.fontFamily = "'Ubuntu', sans-serif";
+secondSection.style.fontFamily = "'Josefin Sans', sans-serif";
+thirdSection.style.fontFamily = "'Rubik Maps', system-ui";
+
+
+
+
+
+
+
+
+
+
+
+// temp code above 
 let menuOpen = false;
 const menu = (menu) =>{
     const nav = document.querySelector("#nav-bar");
@@ -21,8 +53,7 @@ const menu = (menu) =>{
 const logo = (logo) =>{
     document.querySelector('#menu').style.filter = `blur(0)`;
     document.querySelector('#nav-bar').style.filter = `blur(0)`;
-    document.querySelector('.sticky-parent').style.filter = `blur(0)`;
-    document.querySelector('.sticky-parent-opinie').style.filter = `blur(0)`;
+    document.querySelector('section').style.filter = `blur(0)`;
     logo.style.width = `8rem`;
     logo.style.height= `8rem`;
     logo.style.left = 'auto';
@@ -54,137 +85,6 @@ const drop = (x) => {
 
 
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     //2 lines below are for initial position of second section
-//     const secondPic = document.querySelector("#jpg-drugi").style.transform = "translateX(200vw)";
-//     const secondText = document.querySelector("#tekst-drugi").style.transform = "translateX(-200vw)";
-
-//     const targetDownElement = document.querySelector('#sekcja-druga');
-//     const snapDownPosition = targetDownElement.getBoundingClientRect().top + window.scrollY;
-
-//     const targetDownElement2 = document.querySelector('#sekcja-trzecia');
-//     const snapDownPosition2 = targetDownElement2.getBoundingClientRect().top + window.scrollY;
-    
-//     const targetUpElement = document.querySelector('#sekcja-pierwsza');
-//     const snapUpPosition = targetUpElement.getBoundingClientRect().top + window.scrollY;
-    
-//     // Introduce a flag to track whether the function has already executed
-//     let hasDownFunctionExecuted = false;  //flag for the first function
-//     let hasUpFunctionExecuted = true;  //flag for the second function
-//     let hasDownFunctionExecuted2 = false;  //flag for the third function
-
-
-//     window.addEventListener('scroll', function () {
-//         const scrollY = window.scrollY;
-//         const scrollThreshold = 300;
-
-//         if (!hasDownFunctionExecuted && Math.abs(scrollY - snapDownPosition) < scrollThreshold) {
-
-//             DownFunctionToExecuteOnSnap();
-            
-//             // Set the flag to true to prevent further executions
-//             hasDownFunctionExecuted = true;
-//         } else if (hasDownFunctionExecuted && Math.abs(scrollY - snapDownPosition) >= scrollThreshold) {
-//             // Reset the flag if the user scrolls away from the snap position
-//             hasDownFunctionExecuted = false;
-//         }
-//     });
-
-//     window.addEventListener('scroll', function () {
-//         const scrollY = window.scrollY;
-//         const scrollThreshold = 400;
-
-//         if (!hasUpFunctionExecuted && Math.abs(scrollY - snapUpPosition) < scrollThreshold) {
-
-//             UpFunctionToExecuteOnSnap();
-            
-//             // Set the flag to true to prevent further executions
-//             hasUpFunctionExecuted = true;
-//         } else if (hasUpFunctionExecuted && Math.abs(scrollY - snapUpPosition) >= scrollThreshold) {
-//             // Reset the flag if the user scrolls away from the snap position
-//             hasUpFunctionExecuted = false;
-//         }
-//     });
-
-
-//     window.addEventListener('scroll', function () {                             //scroll down 2
-//         const scrollY = window.scrollY;
-//         const scrollThreshold = 300;
-
-//         if (!hasDownFunctionExecuted2 && Math.abs(scrollY - snapDownPosition2) < scrollThreshold) {
-
-//             DownFunctionToExecuteOnSnap2();
-            
-//             // Set the flag to true to prevent further executions
-//             hasDownFunctionExecuted2 = true;
-//         } else if (hasDownFunctionExecuted2 && Math.abs(scrollY - snapDownPosition2) >= scrollThreshold) {
-//             // Reset the flag if the user scrolls away from the snap position
-//             hasDownFunctionExecuted2 = false;
-//         }
-//     });
-
-// });
-
-// function DownFunctionToExecuteOnSnap() {
-
-//     //section1 disappear
-//     const firstPic = document.querySelector("#jpg-pierwszy")
-//     const firstText = document.querySelector("#tekst-pierwszy")
-//     firstPic.style.transform = "translateX(-200vw)";
-//     firstPic.style.opacity = "0";
-//     firstText.style.transform = "translateX(200vw)";
-//     firstText.style.opacity = "0";
-
-//     //section2 appear
-//     const secondPic = document.querySelector("#jpg-drugi")
-//     const secondText = document.querySelector("#tekst-drugi")
-//     secondPic.style.transform = "translateX(0vw)";
-//     secondText.style.transform = "translateX(0vw)";
-//     secondPic.style.opacity = "0.8";
-//     secondText.style.opacity = "1";
-
-
-//     //arrow1 disappear
-//     const strzalka = document.querySelector("#arrows-body-1");
-//     strzalka.style.visibility = "hidden";
-
-//     //arrow2 appear
-//     const strzalkaDruga = document.querySelector("#arrows-body-2");
-//     strzalkaDruga.style.visibility = "visible";
-// }
-// function UpFunctionToExecuteOnSnap() {
-//     const firstPic = document.querySelector("#jpg-pierwszy")
-//     const firstText = document.querySelector("#tekst-pierwszy")
-//     firstPic.style.transform = "translateX(0vw)";
-//     firstPic.style.opacity = "0.8";
-//     firstText.style.transform = "translateX(0vw)";
-//     firstText.style.opacity = "1";
-
-
-
-//     const secondPic = document.querySelector("#jpg-drugi")
-//     const secondText = document.querySelector("#tekst-drugi")
-//     secondPic.style.transform = "translateX(200vw)";
-//     secondPic.style.opacity = "0";
-//     secondText.style.transform = "translateX(-200vw)";
-//     secondText.style.opacity = "0";
-
-
-//     const strzalka = document.querySelector("#arrows-body-1");
-//     strzalka.style.visibility = "visible";
-
-//     const strzalkaDruga = document.querySelector("#arrows-body-2");
-//     strzalkaDruga.style.visibility = "hidden";
-// }
-
-// function DownFunctionToExecuteOnSnap2(){
-//     const secondPic = document.querySelector("#jpg-drugi")
-//     const secondText = document.querySelector("#tekst-drugi")
-//     secondPic.style.transform = "translateX(200vw)";
-//     secondPic.style.opacity = "0";
-//     secondText.style.transform = "translateX(-200vw)";
-//     secondText.style.opacity = "0";
-// }
 
 
 
@@ -248,36 +148,42 @@ const closePop = (object) =>{
 
 
 //Galeria
-const klikOff = () =>{
-    popupPic.style.transform = "translate(-50%, -50%) scale(0)";
-    popup=false;
-}
-
+let popup = false;
+const popupPic = document.getElementById("popupPic");
 const klik = (e) => {
-const zdjecie = e.firstChild;
-if (!popup) {
-    popup = true;
-    popupPic.children[0].src = zdjecie.src;
+    const zdjecie = e.firstChild;
+    console.log(zdjecie);
+    if (!popup) {
+        popup = true;
+        // Set the source of the popupPic image directly
+        popupPic.children[0].src = zdjecie.src;
 
-    const maxWidth = window.innerWidth * 1;
-    const maxHeight = window.innerHeight * 1;
+        // Calculate the maximum width and height for the popup
+        const maxWidth = window.innerWidth * 0.8;
+        const maxHeight = window.innerHeight * 0.8;
 
-    const aspectRatio = img.width / img.height;
-    const maxWidthByHeight = maxHeight * aspectRatio;
+        // Calculate the aspect ratio of the image
+        const aspectRatio = zdjecie.width / zdjecie.height;
 
-    if (maxWidthByHeight > maxWidth) {
+        // Calculate the maximum width based on the height
+        const maxWidthByHeight = maxHeight * aspectRatio;
 
-    img.style.width = maxWidth + 'px';
-    img.style.height = "auto";
-    } else {
-
-    img.style.width = "auto";
-    img.style.height = maxHeight + 'px';
+        // Set the width and height based on the calculated values
+        if (maxWidthByHeight > maxWidth) {
+            popupPic.style.width = maxWidth + 'px';
+            popupPic.style.height = 'auto';
+        } else {
+            popupPic.style.width = 'auto';
+            popupPic.style.height = maxHeight + 'px';
+        }
+        popupPic.style.transform = 'translate3d(-50%, -50%, 0) scale(1)';
+        
     }
-    popupPic.style.width = img.offsetWidth + 'px';
-    popupPic.style.height = img.offsetHeight + 'px';
-    popupPic.style.transform = "translate(-50%, -50%) scale(0.8)";
-}
+};
+
+const klikOff = () => {
+    popupPic.style.transform = 'translate3d(-50%, -50%, 0) scale(0)';
+    popup = false;
 };
   
   
@@ -297,12 +203,7 @@ const transform = (section) =>{
     const offsetTop = section.parentElement.offsetTop;
     const scrollSection = section.querySelector('.scroll-section')
     let percentage = ((window.scrollY - offsetTop)/window.innerHeight)*100;
-    if(stickySections[1].classList[1] =='sticky-opinie'){
-        percentage = percentage < 0 ? 0 : percentage > 680 ? 680 : percentage;
-        scrollSection.style.transform = `translateX(-${percentage}vw)`;
-    }else{
-        percentage = percentage < 0 ? 0 : percentage > 336 ? 336 : percentage;
+    percentage = percentage < 0 ? 0 : percentage > 336 ? 336 : percentage;
     scrollSection.style.transform = `translateX(-${percentage}vw)`;
-    }
     
 }
