@@ -1,35 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-// temp code below
-
-
-const firstSection = document.querySelectorAll(".real-section")[0];
-const secondSection = document.querySelectorAll(".real-section")[1];
-const thirdSection = document.querySelectorAll(".real-section")[2];
-
-firstSection.style.fontFamily = "'Ubuntu', sans-serif";
-secondSection.style.fontFamily = "'Josefin Sans', sans-serif";
-thirdSection.style.fontFamily = "'Rubik Maps', system-ui";
-
-
-
-
-
-
-
-
-
-
-
-// temp code above 
 let menuOpen = false;
 const menu = (menu) =>{
     const nav = document.querySelector("#nav-bar");
