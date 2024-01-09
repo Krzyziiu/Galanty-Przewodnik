@@ -4,7 +4,7 @@ html{
   background: linear-gradient(149deg, rgba(213,173,49,1) 5%, rgba(217,110,22,1) 100%);
   /* background: rgb(32,8,97);
   background: linear-gradient(149deg, rgba(32,8,97,1) 5%, rgba(63,171,199,1) 100%); */
-  
+  font-family: 'Josefin Sans', sans-serif;
   overflow-x: hidden;
   font-size: 16px;  
 }
@@ -19,15 +19,7 @@ body{
   padding-top: 5rem;
 }
 
-#muzea{
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 400;
-}
-#jedzenie{
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
-}
-  
+
 
 
 
@@ -132,7 +124,7 @@ a{
 /* sticky */
 
 .sticky-parent{
-  height: 480vh;
+  height: 300vh;
 }
 
 .sticky{
@@ -148,7 +140,7 @@ a{
   top: 0;
   left: 15%;
   height: 100%;
-  width: 500vw;
+  width: 300vw;
   will-change: transform;
   display: flex;
   align-items: center;
@@ -226,7 +218,7 @@ a{
 }
 .popup img{
   width: auto;
-  height: 25rem;
+  height: 20rem;
 }
 .popup p{
   display: flex;
@@ -234,7 +226,7 @@ a{
   justify-content: center;
   margin: 0;
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 .popup .x{
   position: absolute;
@@ -379,23 +371,42 @@ a{
   
 
 /* Uprawnienia */
-.uprawnienia{
-  margin: 1vw;
+#uprawnienia{
   width: 98vw;
-  height: 100svh;
+  height: 78svh;
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#uprawnienia h2{
+  position: absolute;
+  top: -5rem;
+  align-self: center;
+  color: lightgreen;
+  font-size: 4rem;
+}
+.uprawnienie{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  line-height: 2rem;
-  font-size: 2rem;
+  text-align: center;
+  margin: 2rem;
+  width: 20rem;
+  height: 6rem;
+  cursor: pointer;
 }
-.uprawnienia h2{
-  margin-top: 5%;
-  font-size: 2.8rem;
+.uprawnienie img{
+  height: 100%;
+  width: auto;
+}
+.uprawnienie p{
   color: white;
-}
-.uprawnienia p{
-  color: lightblue;
+  width: 20rem;
 }
 /* Opinie */
 #opinie{
@@ -437,7 +448,7 @@ a{
   justify-content: center;
   width: 8rem;
   height: 8rem;
-  margin: 0.5rem;
+  margin: 3rem;
   border: 1px solid white;
   color: white;
   margin-top: 10%;
@@ -453,30 +464,47 @@ a{
 /* Polecane */
 
 #grid{
-  display: grid;
+  display: flex;
+  margin-top: 2rem;
   width: 100%;
-  height: 87svh;
-  grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr;
+  height: 110svh;
 }
 .grid-item{
-  height: 20rem;
+  width: 30rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: baseline;
   padding: 0;
 }
+.grid-item div{
+  margin: 1rem;
+  width: 10rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid-item img{
+  width: auto;
+  height: 100%;
+}
+#forestescape img{
+  height: 60%;
+  width: auto;
+}
 .grid-item h2{
-  font-size: 3rem;
+  font-size: 2.5rem;
 
   padding: 0;
   margin: 0;
-  color: white
+  color: lightgreen;
 }
 .grid-item a{
-  font-size: 1.5rem;
-  color: rgb(188, 188, 250);
+  font-size: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  color: white;
 }
 
 
@@ -584,8 +612,34 @@ a{
     grid-gap: 5rem;
   }
   .opinia{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 1rem;
+  }
+  #uprawnienia{
+    flex-direction: column;
+  }
+  #uprawnienia h2{
+    font-size: 6rem;
+  }
+  .uprawnienie{
+    width: 30rem;
+    height: 10rem;
+    font-size: 3rem;
+  }
+  #grid{
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  .grid-item div{
+    width: 100%;
+    height: 10rem;
+  }
+  #grid h2{
+    font-size: 7rem;
+  }
+  .grid-item a{
+    font-size: 6rem;
   }
 }
 /* blur */
