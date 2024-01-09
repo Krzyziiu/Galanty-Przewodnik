@@ -121,7 +121,6 @@ let popup = false;
 const popupPic = document.getElementById("popupPic");
 const klik = (e) => {
     const zdjecie = e.firstChild;
-    console.log(zdjecie);
     if (!popup) {
         popup = true;
         // Set the source of the popupPic image directly
@@ -173,6 +172,17 @@ const transform = (section) =>{
     const scrollSection = section.querySelector('.scroll-section')
     let percentage = ((window.scrollY - offsetTop)/window.innerHeight)*100;
     percentage = percentage < 0 ? 0 : percentage > 336 ? 336 : percentage;
-    scrollSection.style.transform = `translateX(-${percentage}vw)`;
-    
+    scrollSection.style.transform = `translateX(-${percentage}vw)`;   
 }
+
+
+const kinematografia = ()=>{
+    window.open("https://muzeumkinematografii.pl/", "_blank");
+}
+const orientarium = ()=>{
+    window.open("https://orientarium.lodz.pl/", "_blank");
+}
+const nckf = ()=>{
+    window.open("https://nckf.pl/", "_blank");
+}
+
