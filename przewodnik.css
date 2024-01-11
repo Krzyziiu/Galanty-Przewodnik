@@ -173,7 +173,6 @@ a{
 /* Oferma */
 .oferty{
   width: 95%;
-  height: 87vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -186,6 +185,7 @@ a{
   height: 25rem;
   position: relative;
   text-align: center;
+  cursor: pointer;
 }
 .box img{
   width: 100%;
@@ -435,7 +435,7 @@ a{
   display: flex;
   margin-top: 2rem;
   width: 100%;
-  height: 110svh;
+  height: 120svh;
 }
 .grid-item{
   width: 30rem;
@@ -457,15 +457,12 @@ a{
   width: auto;
   height: 100%;
 }
-#forestescape img{
-  height: 60%;
-  width: auto;
-}
+
 .grid-item h2{
   font-size: 2.5rem;
-
   padding: 0;
   margin: 0;
+  margin-bottom: 4rem;
   color: lightgreen;
 }
 .grid-item a{
@@ -554,6 +551,7 @@ a{
   .oferty{
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     margin: 0;
   }
   #box1, #box2, #box3, #box4, #box5, #box6{
@@ -605,7 +603,8 @@ a{
     height: 10rem;
   }
   #grid h2{
-    font-size: 7rem;
+    font-size: 10rem;
+    margin-top: 3rem;
   }
   .grid-item a{
     font-size: 6rem;
