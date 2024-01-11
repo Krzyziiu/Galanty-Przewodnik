@@ -96,9 +96,23 @@ const goTop = () => {
 
 
 let popFlag = false; //check if popup is active
-const pop = (object) =>{
+const textList = [
+    "Szkolene wycieczki odwiedzając Łódź przewidują na jej zwiedzenie kilka godzin i jest to wykonalne; Na pewno odwiedzimy orientarium by zobaczyć jak Alex i jego ekipa zażywają kąpieli; zobaczymy jak wyglądała praca w łdzkich fabrykach w XIX wieku (tak, zobaczymy pracujące maszyny), odwiedzimy piotrkowską i Manufakturę.. a co jeszcze to zaleźy od czasu i waszeg programu do którego się dostosuję. Nieważne czy przyjeżdzacie pociągiem czy autokarem, na pewno zdążycie zobaczyć to co chcecie. A jeżeli będziecie chcieli wzbogacić pobyt w łodzi o grę miejską, mam przygotowany niejeden scenariusz...",
+    "spacer poprzez najbardziej znaną dzielnicę Łodzi, swego czasu największą wieś w Europie, miejsce gdzie osiedlali się zwolnieni z zakładów karnych, przybywający do ZIemi obiecanej czy poprostu szukający lepszego życia.. *nazwa zaczerpnięta od www.goudaworks.pl",
+    "przejdziemy Trasą z Parku Staromiejskiego aż do Stacji Radegast; odwiedzimy ławeczkę Jana Karskiego, pomnik Pękniętego Serca i Cmentarz Żydowski",
+    "Księzy Młyn czyli miasto w Mieście z najstarszym parkiem w Łodzi; Muzeum KInematografi w Pałacu Scheiblerów; czeka tu na nas Filemon, Fotoplastinon (tak, ten który pilnie chciał sprzedać Duńczyk) oraz talerz z Kingsajz`a; największy budynek przemyslowy w Polsce w XIX w. i jedyne w swoim rodzaju osiedle robotnicze z muzem swojego imienia oraz Muzem Lalki",
+    "Przejdziemy Królową Polskich ulic, najdłuższym deptakiem (zmieżone !) w Polsce; dotkniemy nosów kilku znanych Łodzian zaklętych w pomniki, pokaże wam też swój mały pomnik; rzucimy okiem na kiklka kamienic zaliczającycj sie do ikon secesji i eklektyzmu; odwidzimy Aleję Gwiazd polskiej kinematografi; a co jesxcze skrywa ta ulica i jej podwórka dowiecie się w trakcje spaceru",
+    "podróż przez Łódź dla najwytrwalszych turystów; jeżeli poświęcicie na to 10-12 godzin to zdążymy zobaczyć wszystko co powyżej, zaopatrzcie się tylko w wygodne buty i dobry nastró; wycieczka możliwa zarówno waszym transportem, komunikacją miejską, rowerami lub moim autem :-)"
+];
+const pop = (e) =>{
+    const popup = document.querySelector(".popup");
+    //indexOf e
+    const childrenArray = Array.from(e.parentElement.children);
+    const index = childrenArray.indexOf(e);
     if(!popFlag){
-        object.nextElementSibling.style.transform = "translate(-50%, -50%) scale(1)";
+        popup.style.transform = "translate(-50%, -50%) scale(1)";
+        popup.children[0].src = e.children[0].src;
+        popup.children[1].innerText = textList[index];
     }
     
     popFlag = true;
