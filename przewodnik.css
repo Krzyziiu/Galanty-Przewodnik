@@ -172,16 +172,19 @@ a{
 
 /* Oferma */
 .oferty{
-  position: relative;
   width: 95%;
   height: 87vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
   margin: 2rem;
 }
 .box{
   width: 25rem;
   height: 25rem;
-  position: absolute;
+  position: relative;
   text-align: center;
 }
 .box img{
@@ -190,7 +193,7 @@ a{
 }
 .box .tooltip{
   position: absolute;
-  bottom: -5%;
+  bottom: 3%;
   width: 100%;
   height: 3rem;
   background-color: rgba(0,0,0,0.9);
@@ -241,49 +244,6 @@ a{
   cursor: pointer;
 }
 
-
-
-#box1{
-  top: 3%;
-  left: 6%;
-  width: 27.7%;
-  height: 39.38%;
-}
-#box2{
-  top: 4%;
-  left: 38%;
-  width: 31.24%;
-  height: 38.77%;
-}
-#box3{
-  top: 12%;
-  right: 4%;
-  width: 24.63644%;
-  height: 39.38%;
-  
-}
-#box4{
-  top: 50%;
-  left: 5%;
-  width: 30.68%;
-  height: 39.38%;
-  
-}
-
-#box5{
-  top: 55%;
-  right: 3%;
-  width: 26.59%;
-  height: 39.38%;
-  
-}
-#box6{
-  top: 47%;
-  left: 39%;
-  width: 28.808%;
-  height: 37.54%;
-  
-}
 
 
 
@@ -438,25 +398,33 @@ a{
 #contact{
   margin: 1vw;
   width: 98vw;
-  height: 70svh;
+  height: 38rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 #contact .icon{
+  width: 8rem;
+  height: 8rem;
+  margin-left: 20rem;
+  margin-top: 3rem;
+  border-radius: 20%;
+  border: 1px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 8rem;
-  height: 8rem;
-  margin: 3rem;
-  border: 1px solid white;
   color: white;
-  margin-top: 10%;
-  border-radius: 20%;
   cursor: pointer;
+  position: relative
 }
 .icon i{
   font-size: 3rem;
+}
+.icon-text{
+  position: absolute;
+  left: 10rem;
+  color: white;
+  font-size: 2rem;
+  text-wrap: nowrap;
 }
 
 
@@ -641,6 +609,19 @@ a{
   }
   .grid-item a{
     font-size: 6rem;
+  }
+  #contact{
+    height: 98rem;
+  }
+  #contact .icon{
+    width: 12rem;
+    height: 12rem;
+    margin-left: 4rem;
+    margin-top: 12rem;
+  }
+  .icon-text{
+    left: 15rem;
+    font-size: 2.5rem;
   }
 }
 /* blur */
