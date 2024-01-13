@@ -614,12 +614,12 @@ a{
   #contact .icon{
     width: 12rem;
     height: 12rem;
-    margin-left: 4rem;
+    margin-left: 0;
     margin-top: 12rem;
   }
   .icon-text{
     left: 15rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 /* blur */
