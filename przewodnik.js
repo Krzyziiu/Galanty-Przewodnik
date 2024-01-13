@@ -19,6 +19,7 @@ const menu = (menu) =>{
         bar3.style.transform = "translate(0, -0rem) rotate(0deg)";
     }
 }
+
 const logo = (logo) =>{
     document.querySelector('#menu').style.filter = `blur(0)`;
     document.querySelector('#nav-bar').style.filter = `blur(0)`;
@@ -32,6 +33,7 @@ const logo = (logo) =>{
         logo.style.width = `10rem`;
         logo.style.height= `10rem`;
         logo.style.right = `-4%`;
+        logo.style.top = `1%`;
     }
 }
 let dropFlag = false; // not dropped
@@ -127,7 +129,8 @@ const closePop = (object) =>{
 
 
 
-
+// THIS CODE WAS 100% MADE BY KRZYSZTOF KUBIAK, HERE'S HIS INSTAGRAM:
+// https://www.instagram.com/no_one_importannt?igsh=MWdnbjZ3ajU2a3pnMg==
 
 
 //Galeria
