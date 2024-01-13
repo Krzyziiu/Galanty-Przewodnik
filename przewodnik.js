@@ -33,7 +33,7 @@ const logo = (logo) =>{
         logo.style.width = `10rem`;
         logo.style.height= `10rem`;
         logo.style.right = `-4%`;
-        logo.style.top = `3%`;
+        logo.style.top = `4%`;
     }
 }
 let dropFlag = false; // not dropped
