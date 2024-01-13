@@ -17,6 +17,7 @@ body{
   width: 100%;
   height: 100%;
   padding-top: 5rem;
+  position: relative;
 }
 
 
@@ -557,6 +558,9 @@ a{
     font-size: 2rem;
     width: 80%;
   }
+  .scroll-section{
+    margin-top: 6rem;
+  }
 
   .oferty{
     display: flex;
@@ -593,6 +597,7 @@ a{
   }
   #uprawnienia{
     flex-direction: column;
+    height: 89svh;
   }
   #uprawnienia h2{
     font-size: 6rem;
@@ -631,6 +636,7 @@ a{
     left: 15rem;
     font-size: 2rem;
   }
+  
 }
 /* blur */
 #menu{
