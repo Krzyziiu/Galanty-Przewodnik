@@ -587,8 +587,12 @@ a{
     font-size: 3rem;
     height: 100%;
     left: -40%;
-    padding-top: 5rem;
-    padding-left: 0;
+    padding-top: 6rem;
+    padding-left: 2rem;
+  }
+  #lang >*{
+    height: 3rem;
+    margin: 1rem;
   }
   
   #menu{
