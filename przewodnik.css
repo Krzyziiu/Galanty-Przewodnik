@@ -197,8 +197,9 @@ a{
 
 /* Oferma */
 .oferty{
-  width: 95%;
+  width: 90%;
   display: flex;
+  align-self: center;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -206,8 +207,8 @@ a{
   margin: 2rem;
 }
 .box{
-  width: 25rem;
-  height: 25rem;
+  width: 26vw;
+  height: 26vw;
   position: relative;
   text-align: center;
   cursor: pointer;
@@ -223,7 +224,7 @@ a{
   padding: 0.4rem;
   background-color: rgba(0,0,0,0.9);
   color: rgb(141, 141, 216);
-  font-size: 1.3rem;
+  font-size: 1.5vw;
 }
 
 
